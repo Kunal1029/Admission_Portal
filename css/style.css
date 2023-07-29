@@ -15,6 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* .row1 img {
@@ -23,7 +24,7 @@
 } */
 
 .row1 {
-    background-color: #97866cb8;
+    background-color: #ceb7978e;
     border-radius: 5%;
     width: 85%;
 }
