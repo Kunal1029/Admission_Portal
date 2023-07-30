@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=DM+Serif+Display&family=Montserrat:wght@200&family=PT+Sans&display=swap');
+    </style>
 </head>
 
 <body>
@@ -28,11 +34,11 @@
 
                     <!-- clg logo -->
                     <a href="#" class="text-center fom">
-                        <img src="image/mits.png">
+                        <img src="image/mits.png" class="gs1">
                     </a>
 
                     <!-- form and text -->
-                    <div class="row mt-3 d-flex align-item-center justify-content-center">
+                    <div class="row mt-3 d-flex  align-item-center justify-content-center">
 
                         <div class="bor h3 w-75">
                             <h3>
@@ -43,61 +49,67 @@
                         <!-- form start -->
                         <form class="pt-3 text-center bor  a1">
 
-                            <div class="form-group  form-outline input-group mb-3 col-lg">
+                            <div class="form-group  form-outline input-group mb-3 col-lg gform">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                                 </div>
-                                <input name="" class="form-control line " placeholder="Full Name" type="text"
-                                    required="">
+                                <input name=""
+                                    class="form-control line bg-info p-2 text-dark bg-opacity-10  rounded  shadow-none"
+                                    placeholder="Full Name" type="text" required="">
 
                             </div> <!-- form-name// -->
 
 
-                            <div class="form-group input-group mb-3 col-lg">
+                            <div class="form-group input-group mb-3 col-lg gform">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                                 </div>
-                                <input name="" class="form-control line" placeholder="Email address" type="email"
-                                    required="">
+                                <input name=""
+                                    class="form-control line bg-info p-2 text-dark bg-opacity-10 shadow-none rounded"
+                                    placeholder="Email address" type="email" required="">
                             </div> <!-- form-email// -->
 
 
-                            <div class="form-group input-group mb-3 col-lg">
+                            <div class="form-group input-group mb-3 col-lg gform">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                                 </div>
-                                <input name="" class="form-control line" placeholder="Phone number" type="text"
-                                    required="">
+                                <input name=""
+                                    class="form-control line bg-info p-2 text-dark bg-opacity-10  rounded shadow-none"
+                                    placeholder="Phone number" type="number" required="">
                             </div> <!-- form-number// -->
 
 
 
-                            <div class="form-group input-group mb-3">
+                            <div class="form-group input-group mb-3 gform">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                                 </div>
-                                <input class="form-control line" placeholder="Create password" type="password"
-                                    required="">
+                                <input
+                                    class="form-control line bg-info p-2 text-dark bg-opacity-10  rounded  shadow-none"
+                                    placeholder="Create password" type="password" required="">
                             </div> <!-- form-password// -->
 
 
-                            <div class="form-group input-group mb-3">
+                            <div class="form-group input-group mb-3 gform">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                                 </div>
-                                <input class="form-control line" placeholder="Repeat password" type="password"
-                                    required="">
+                                <input
+                                    class="form-control line bg-info p-2 text-dark bg-opacity-10  rounded  shadow-none"
+                                    placeholder="Repeat password" type="password" required="">
                             </div> <!-- form-password// -->
 
 
 
 
-                            <div class="form-group input-group bor ">
+                            <div class="form-group input-group bor gform">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
                                         <i class="fa-regular fa-image"></i>
-                                        <input type="file" name="profile_image" class="form-control line1" required="">
-
+                                        <input type="file" name="profile_image"
+                                            class="form-control rounded line1 bg-info p-2 text-dark bg-opacity-10  shadow-none"
+                                            required="">
                                     </span>
 
                                 </div>
@@ -107,7 +119,7 @@
 
 
                             <!-- Declaration -->
-                            <div class="log1 mt-4">
+                            <div class="log1 mt-4 g5">
                                 <input type="checkbox" id="declarationAgreement" required>
                                 <label for="declarationAgreement">
                                     <p class="">I agree to the above <a class="" data-bs-toggle="modal"
@@ -130,7 +142,7 @@
                                                 knowledge. I understand that any falsification of information may result
                                                 in the cancellation of my admission.
                                             </p>
-                                            <button type="button" class="btn btn-warning text-white"
+                                            <button type="button" class="btn btn-warning text-white "
                                                 data-bs-dismiss="modal" aria-label="close">OK</button>
                                         </div><!--modal body-->
                                     </div><!--modal dialog end-->
@@ -139,9 +151,10 @@
                             <!-- declaration end -->
 
                             <div class="form-group mb-3 ">
-                                <button type="submit" class="btn btn-danger btn-block"> Create Account </button>
+                                <button type="submit" class="btn btn-danger btn-block g6"> Create Account </button>
                             </div> <!-- form-group// -->
-                            <p class="text-center log mt-1">Already have an account? <a href="login.html"><b>Log In</b></a> </p>
+                            <p class="text-center log mt-1">Already have an account? <a href="login.html"><b>Log
+                                        In</b></a> </p>
 
 
 
@@ -154,7 +167,10 @@
             </div>
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Ajs/animreg.js"></script>
 </body>
 
 </html>

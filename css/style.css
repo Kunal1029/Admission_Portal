@@ -8,6 +8,10 @@
 /* .bor{
         border: 2px solid red;
     } */
+    .no-border {
+        border: 0;
+        box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+    }
 .img1 {
     background-image: url("../image/bgimg.jpg");
     width: 98vw;
@@ -24,7 +28,8 @@
 } */
 
 .row1 {
-    background-color: #ceb7978e;
+    /* background-color: #c3c6926e; */
+    background-color: #97866ca0;
     border-radius: 5%;
     width: 85%;
 }
