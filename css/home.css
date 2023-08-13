@@ -8,7 +8,21 @@
     font-family: 'Oswald', sans-serif;
 
 }
+/* .nav .navbar-toggler:focus,
+.nav .navbar .btn-close {
+	box-shadow: none;
+}
+.offcanvas-start {
+	top: 0;
+	left: 0;
+	width: 311px;
+	border-right: 1px solid rgba(0, 0, 0, .2);
+	transform: translateX(-100%);
+}
 
+.nav .navbar-toggler {
+	border: none;
+} */
 .fade {
     background-image: url("../image/modalimg.png");
     background-repeat: no-repeat;
@@ -256,6 +270,7 @@ letter-spacing: 1px;
     }
     .mobimg{
         display: inline-block;
+        /* width: 50%; */
     }
     .navbar-brand img {
         width: 30vh;

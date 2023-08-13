@@ -1,130 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-<link rel="icon" href="image/logo.png">
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="image/logo.png">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=DM+Serif+Display&family=Montserrat:wght@200&family=PT+Sans&display=swap');
-</style>
-<link rel="stylesheet" href="css/home.css"></head>
-<body>
-            <!-- course register -->
-            <!-- <div class="log1 mt-4 g5">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=DM+Serif+Display&family=Montserrat:wght@200&family=PT+Sans&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body style="background-color: gray;">
+    <!-- course register -->
+    <!-- <div class="log1 mt-4 g5">
                 <div class="apply text-center mt-5">
                     <a href="dashboard.html" data-bs-toggle="modal" data-bs-target="#a1"><button class="btn btn-danger  btn-lg">Enroll
                             now</button></a>
                 </div>
                 </label>
             </div> -->
-    
-            <div class="modal mt-5 fade bg-danger bg-opacity-25" id="a1">
-                <div class="modal-dialog modal-md">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="text-danger modal-title" id="course">Co<u>urse Enrollment Form</u></h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                        </div> <!--modal header end-->
-    
-                        <div class="modal-body">
-                            <p class="text-center mt-4 text-dark text-left">In Case any query, Kindly Contact:
-                                +916261432532</p>
-                            <div class="container-fluid rowlogin">
-                                <form class="a1 mt-4 mb-4">
-    
-                                    <div class=" w-75 ">
-                                        <div class="form-group form-outline   input-group mb-3 col-lg gform transi">
-    
-                                            <input name=""
-                                                class="form-control line bg-light p-2 text-dark bg-opacity-50  rounded  shadow-none"
-                                                placeholder="Username" type="text" required="">
-    
-                                        </div> <!-- form-name// -->
-                                    </div>
-    
-    
-                                    <div class="form-group w-75 input-group mb-3 col-lg gform transi">
-                                        <input name=""
-                                            class="form-control form-control-sm line bg-light p-2 text-dark bg-opacity-25 shadow-none rounded"
-                                            placeholder="Email address" type="email" required="">
-                                    </div> <!-- form-email// -->
-    
-    
-    
-                                    <div class="form-group w-75 input-group mb-3 col-lg gform transi">
-                                        <input name=""
-                                            class="form-control form-control-sm line bg-light p-2 text-dark bg-opacity-25  rounded shadow-none"
-                                            placeholder="Enter Phone number " type="number" required="">
-                                    </div> <!-- form-number// -->
-    
-    
-                                    <div class="form-group w-75 input-group mb-3 col-lg gform transi">
-                                        <label for="" class="pt-1">Date of Birth : </label> &nbsp;&nbsp;&nbsp;
-                                        <input name=""
-                                            class="form-control form-control-sm line bg-light p-2 text-dark bg-opacity-25  rounded shadow-none"
-                                            type="date" required="">
-                                    </div> <!-- dob// -->
-    
-                                    <div class="gender mb-3 w-75">
-                                        <label for="" class="">Gender : </label><br>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">Male</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">Female</label>
-                                        </div>
-                                        <!-- <div class="form-check form-check-inline">
+
+    <div class="modal mt-5 fade bg-danger bg-opacity-25" id="a1">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="text-danger modal-title" id="course">Co<u>urse Enrollment Form</u></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div> <!--modal header end-->
+
+                <div class="modal-body">
+                    <p class="text-center mt-4 text-dark text-left">In Case any query, Kindly Contact:
+                        +916261432532</p>
+                    <div class="container-fluid rowlogin">
+                        <form class="a1 mt-4 mb-4">
+
+                            <div class=" w-75 ">
+                                <div class="form-group form-outline   input-group mb-3 col-lg gform transi">
+
+                                    <input name=""
+                                        class="form-control line bg-light p-2 text-dark bg-opacity-50  rounded  shadow-none"
+                                        placeholder="Username" type="text" required="">
+
+                                </div> <!-- form-name// -->
+                            </div>
+
+
+                            <div class="form-group w-75 input-group mb-3 col-lg gform transi">
+                                <input name=""
+                                    class="form-control form-control-sm line bg-light p-2 text-dark bg-opacity-25 shadow-none rounded"
+                                    placeholder="Email address" type="email" required="">
+                            </div> <!-- form-email// -->
+
+
+
+                            <div class="form-group w-75 input-group mb-3 col-lg gform transi">
+                                <input name=""
+                                    class="form-control form-control-sm line bg-light p-2 text-dark bg-opacity-25  rounded shadow-none"
+                                    placeholder="Enter Phone number " type="number" required="">
+                            </div> <!-- form-number// -->
+
+
+                            <div class="form-group w-75 input-group mb-3 col-lg gform transi">
+                                <label for="" class="pt-1">Date of Birth : </label> &nbsp;&nbsp;&nbsp;
+                                <input name=""
+                                    class="form-control form-control-sm line bg-light p-2 text-dark bg-opacity-25  rounded shadow-none"
+                                    type="date" required="">
+                            </div> <!-- dob// -->
+
+                            <div class="gender mb-3 w-75">
+                                <label for="" class="">Gender : </label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                </div>
+                                <!-- <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                                 id="inlineRadio3" value="option3">
                                             <label class="form-check-label" for="inlineRadio3">Others</label>
-                                        </div> -->  <!-- others in gender // -->
-                                    </div><!-- gender// -->
-    
-                                    <div class="form-group mb-3 w-75">
-                                        <label for="">Address</label>
-                                        <textarea name="address" id=""
-                                            class="form-control  form-control-sm line bg-light p-2 text-dark bg-opacity-25 shadow-none rounded"></textarea>
-                                    </div><!-- Address// -->
-    
-    
-                                    <div class="form-group mb-3 w-75">
-    
-                                        <select id=""
-                                            class="form-control  form-control-sm line bg-light p-2 text-dark bg-opacity-25 shadow-none rounded">
-                                            <option selected>Choose Course</option>
-                                            <option>Bachelors of Technology (B.Tech) </option>
-                                            <option>Bachelors of Computer & Applications (BCA)</option>
-                                            <option>Masters of Computer & Applications (MCA)</option>
-                                        </select>
-                                    </div><!-- Course// -->
-    
-                                </form>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-warning text-white  " data-bs-dismiss="modal"
-                                    aria-label="close">Submit</button>
-                            </div>
-                        </div><!--modal body-->
-                    </div><!--modal dialog end-->
-                </div>
-            </div>
-            <!-- course register end -->
+                                        </div> --> <!-- others in gender // -->
+                            </div><!-- gender// -->
+
+                            <div class="form-group mb-3 w-75">
+                                <label for="">Address</label>
+                                <textarea name="address" id=""
+                                    class="form-control  form-control-sm line bg-light p-2 text-dark bg-opacity-25 shadow-none rounded"></textarea>
+                            </div><!-- Address// -->
+
+
+                            <div class="form-group mb-3 w-75">
+
+                                <select id=""
+                                    class="form-control  form-control-sm line bg-light p-2 text-dark bg-opacity-25 shadow-none rounded">
+                                    <option selected>Choose Course</option>
+                                    <option>Bachelors of Technology (B.Tech) </option>
+                                    <option>Bachelors of Computer & Applications (BCA)</option>
+                                    <option>Masters of Computer & Applications (MCA)</option>
+                                </select>
+                            </div><!-- Course// -->
+
+                        </form>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-warning text-white  " data-bs-dismiss="modal"
+                            aria-label="close">Submit</button>
+                    </div>
+                </div><!--modal body-->
+            </div><!--modal dialog end-->
+        </div>
+    </div>
+    <!-- course register end -->
+
+
+    <!-- social media -->
+    <div class="form-group mb-3 mt-5 text-center">
+        <button type="submit" class="btn btn-danger btn-block g6"> Create Account </button>
+    </div> <!-- form-group// -->
+    <p class="text-center log mt-1">Already have an account? <a href="login.html"><b>Log
+                In</b></a> </p>
+
+    <h6 class="text-center">Or</h6>
+    <h5 class="text-center"><i class="fa-brands fa-google text-danger" ></i> Sign up with Google</a></h5>
+    <button class="text-center text-white btn btn-md btn-outline-warning"><i class="fa-brands fa-google text-danger" ></i> Sign up with Google</button>
+    <button class="text-center text-white btn btn-md btn-outline-primary"><i class="fa-brands fa-facebook"></i> Sign up with Facebook</button>
+
 </body>
+
 </html>

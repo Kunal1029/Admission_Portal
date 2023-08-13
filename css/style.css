@@ -61,7 +61,7 @@ input::placeholder {
     width: 100%;
 } */
 .fom img {
-    width: 25%;
+    width: 35%;
 }
 
 .h3 h3 {
@@ -174,5 +174,21 @@ input::placeholder {
 
     .log1 {
         font-size: 0.6em;
+    }
+}
+@media only screen and (max-width: 920px) and (max-height: 1370px) {
+    .fom {
+        width:  100%;
+    }
+    .fom img {
+        width:  65%;
+    }
+    .row1 {
+        background: linear-gradient(#5680e9aa, #84ceebc4, #5abaeab7, #c1c8e4bd, #8760d0a8);
+        border-radius: 30px;
+        width: 100%;
+    }
+    .form-group {
+        width: 90%;
     }
 }
