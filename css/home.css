@@ -11,6 +11,9 @@
 
 .fade {
     background-image: url("../image/modalimg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 
