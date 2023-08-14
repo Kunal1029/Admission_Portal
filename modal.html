@@ -21,7 +21,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=DM+Serif+Display&family=Montserrat:wght@200&family=PT+Sans&display=swap');
     </style>
-    <link rel="stylesheet" href="css/home.css">
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
 </head>
 
 <body style="background-color: gray;">
@@ -139,10 +139,82 @@
                 In</b></a> </p>
 
     <h6 class="text-center">Or</h6>
-    <h5 class="text-center"><i class="fa-brands fa-google text-danger" ></i> Sign up with Google</a></h5>
-    <button class="text-center text-white btn btn-md btn-outline-warning"><i class="fa-brands fa-google text-danger" ></i> Sign up with Google</button>
-    <button class="text-center text-white btn btn-md btn-outline-primary"><i class="fa-brands fa-facebook"></i> Sign up with Facebook</button>
+    <h5 class="text-center"><i class="fa-brands fa-google text-danger"></i> Sign up with Google</a></h5>
+    <button class="text-center text-white btn btn-md btn-outline-warning"><i
+            class="fa-brands fa-google text-danger"></i> Sign up with Google</button>
+    <button class="text-center text-white btn btn-md btn-outline-primary"><i class="fa-brands fa-facebook"></i> Sign up
+        with Facebook</button>
 
+
+
+    <div class="bg-light w-100 ">
+
+        <div class="container-fluid ">
+            <div class="row d-flex">
+                <a href="#" class="text-center col-md-4 mt-2">
+                    <img src="image/footimg.png" class=" w-50">
+                </a>
+
+                <div class=" mt-4 col-md-5 d-flex align-item-center justify-content-around">
+                    <p class="">Terms of Use</p>
+                    <p>Privacy & Cookie statement</p>
+                    <p>Disclaimer</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <h6 class="text-center">© 2023 ITM University Gwalior</h6>
+            </div>
+        </div>
+    </div>
+
+    <form>
+        <h4 class="text-center">Talk to our experts</h4>
+        <div id="input_name" class="col-md-4 row-btm">
+            <input type="text" id="txtName" class="form-control" placeholder="Name"/>
+        </div>
+        <div id="input_email" class="col-md-4 row-btm">
+            <input id="txtEmail" class="form-control" required onpaste="return false;" oncopy="return false;" placeholder="Email ID*" type="email">
+        </div>
+        <div id="input_phone" class="col-md-4 row-btm">
+            <input type="text" id="txtContact" class="form-control" onchange="SendOTP()" onpaste="return false;" oncopy="return false;" maxlength="10" required placeholder="Mobile Number*" onkeypress="return isNum(event)" />
+        </div>
+        <div id="dvotp" class="col-md-4 row-btm">
+            <div class="colmyclass otpclassp" style="padding: 0;">
+                <input type="text" id="txtotp" maxlength="6" required="" class="form-control" placeholder="OTP" aria-required="true" disabled="disabled">
+                <input id="btnVerify" class="form-control" onclick="VerifyOTP();" type="button" value="Verify"
+                    style="background: #8fbeec none repeat scroll 0 0; color: #000;">
+                <input id="btnResend" class="form-control" onclick="ResendCode();" type="button" value="Resend"
+                    style="background: #8fbeec none repeat scroll 0 0; color: #000;">
+                <input id="btnVerifySuccess" class="form-control" type="button" value="Verified"
+                    style="background: #8fbeec none repeat scroll 0 0; color: #000; display:none;">
+            </div>
+        </div>
+        <div id="input_dob" class="col-md-4 row-btm">
+            <input id="txtdob" class="form-control" max='2005-01-01' type="text" onfocus="(this.type='date')" name="dob" placeholder="Date of Birth*">
+        </div>
+        
+
+       
+        <div class="col-md-12">
+            <input type="checkbox" id="chkbox" style="width: 15px;height: 15px;margin: 0px;" required />
+            <span class="consentmsgdesclass"></span>
+            
+        </div>
+        <div class="form-group">
+            <input type="hidden" class="form-control" id="txtPopregioname" value="" ></input>
+        </div>
+        <div class="form-group">
+            <input type="hidden" class="form-control" id="txtPopcityname" value="" ></input>
+        </div>
+        <div class="form-group">
+            <input type="hidden" class="form-control" id="txtPopcityzip" value="" ></input>
+        </div>
+        <!-- Submit Button -->
+        <div id="form_register_btn" class="text-center">
+            <button id="btnSubmit" class="btn btn-theme" type="button" style="margin-top: 15px;">SUBMIT</button>
+        </div>
+    </form> <!-- End Register Form -->
 </body>
 
 </html>

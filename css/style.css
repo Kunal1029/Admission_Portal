@@ -127,6 +127,11 @@ input::placeholder {
     justify-content: center;
 
 }
+.smedia button:hover{
+   /* width: 50px; */
+   box-shadow: -1px 1px 5px black;
+   border-radius: 100%;
+}
 
 @media (max-width:770px) {
     .fom {
