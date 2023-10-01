@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300;400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300;400;600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -38,8 +38,9 @@
 
 
 .navbar {
-    background-color: #ffffffbd;
-    box-shadow: 0 5px 8px rgba(160, 148, 148, 0.638);
+    background-color: #ffffffb7;
+    /* background: linear-gradient( #84ceeb82, #5abaea83, #c1c8e48d); */
+    box-shadow: 0 5px 8px rgba(160, 148, 148, 0.485);
     z-index: 99;
 }
 
@@ -84,14 +85,67 @@
     background-position: center;
     background-size: cover;
 }
-
+.smallimg{
+    display: none;
+}
 video {
     width: 100%;
+}
+.enquiry{
+    margin-left: 85%;
+    margin-right: 2%;
+   
 }
 
 /* main secction */
 
-
+.whyitm{
+   width: 96vw;
+   /* height: 56vw; */
+   background-image: url('../image/whyitm2.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.exploreCourse{
+    width: 96vw;
+    /* height: 46vw; */
+    background-image: url('../image/whyItm.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.whyitm h1{
+    font-size: 4em;
+    letter-spacing: 2px;
+}
+.whyitm p{
+    font-size: 2.5rem;
+    line-height: 45px;
+}
+.whyitm button a{
+   text-decoration: none;
+   color: white;
+}
+.whyitm h6{
+    /* color: #e0e000; */
+    /* color: rgb(232, 236, 14); */
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: bold; 
+    /* display: inline; */
+    /* text-decoration: underline 1px red; */
+    
+}
+.textbackgroundcolor{
+    /* background: linear-gradient(#5680e9aa, #84ceebc4, #5abaeab7, #c1c8e4bd, #8760d0a8); */
+/* background-color: rgba(244, 169, 132, 0.33); */
+    background: linear-gradient(#84ceeb76, #5abaea62, #c1c8e45f);
+    border-radius: 20px;
+    height: 80%;
+}
 label {
     font-weight: lighter;
 }
@@ -99,18 +153,24 @@ label {
 .h22 {
     font-size: 4vw;
     font-weight: 400;
-    
+    font-weight:500;
+    letter-spacing: 2px;
+   position: relative;
+   /* top: 7%; */
+   left: 8%;
+    color: #bcffca;
+    border-bottom: rgb(238, 149, 39) solid 2px;
+    display: inline;
 }
 
-.h22::before {
+/* .h22::before {
     content: "Explore our courses";
     position: absolute;
     left: 36%;
     color: #5abaeab7;
-    /* background: linear-gradient(#5680e9aa, #84ceebc4, #5abaeab7, #c1c8e4bd, #8760d0a8); */
-    -webkit-text-stroke: #c1c8e4bd 1px;
+   -webkit-text-stroke: #c1c8e4bd 1px;
     z-index: -1;
-}
+} */
 .alert{
     font-size: 1rem;
     animation-name: info;
@@ -121,9 +181,10 @@ label {
     animation-direction: alternate;
 }
 .card-body h5 {
-    font-weight: 500;
+    font-weight: 900;
     font-size: 1.3rem;
-    color: red;
+    color: yellow;
+    letter-spacing: 1px;
     /* background-color: #84ceebc4; */
     text-align: justify;
     
@@ -143,8 +204,14 @@ label {
 
 .card-body table tr td{
     font-size: 0.9rem;
+    box-shadow: 0px 1px 7px rgba(32, 32, 32, 0.781);
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #00000000;
     /* background: linear-gradient(#5680e9aa, #84ceebc4, #5abaeab7, #c1c8e4bd, #8760d0a8); */
 }
+
 
 .card-body {
     /* background: linear-gradient(#5680e9aa, #84ceebc4, #5abaeab7, #c1c8e4bd, #8760d0a8); */
@@ -153,6 +220,7 @@ label {
     position: absolute;
     top: 0;
     left: 0;
+    background-color: rgba(255, 255, 255, 0.525);
     border: 2px #ffbce6 solid;
     box-shadow: 0px 1px 7px rgba(32, 32, 32, 0.781);
 }
@@ -167,6 +235,7 @@ label {
 
 .card {
     border: none;
+    background-color: rgba(255, 255, 255, 0.2);
     /* height: 40vh; */
 }
 
@@ -175,6 +244,7 @@ label {
     transition: 0.6s;
     transform-style: preserve-3d;
     position: relative;
+
 }
 
 .front {
@@ -190,6 +260,7 @@ label {
     /* top: 0;
     left: 0; */
     color: cornSilk;
+    background-color: #ededed00;
     text-align: center;
     /* height: 40vh; */
     width: 100%;
@@ -199,6 +270,7 @@ label {
 .card:hover .flipper {
     /* height: 38vh; */
     transform: rotateY(180deg);
+    
 }
 
 /* flip */
@@ -226,15 +298,27 @@ label {
     letter-spacing: 1px;
     font-size: 1rem;
     text-align: justify;
+    background: linear-gradient(#84ceeb76, #5abaea62, #c1c8e45f);
 }
-
+.about{
+    width: 98vw;
+    /* height: 46vw; */
+    background-image: url('../image/aboutimg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .aboutfont p {
     font-size: 1em;
     text-align: justify;
+    display: inline;
+    /* background-color: #bcffca82; */
 }
 
 .aboutfont img {
     width: 100%;
+    margin-bottom: 5%;
 }
 
 .input-group-text {
@@ -261,46 +345,64 @@ label {
 }
 
 /* footer start */
-.contact h3,
-p {
-    letter-spacing: 1px;
+
+footer{
+    background-color: black;
+    
+}
+
+.part1{
+    background-color: black;
+}
+
+
+.contact h5{
+    font-size: 0.8em;
+    /* text-align: justify; */
+    line-height: 26px;
+    /* letter-spacing: 1px; */
 }
 
 .contact p {
-    font-size: 0.9rem;
+    font-size: 0.7em;
+    text-align: justify;
+    line-height: 26px;
 }
 
 /* copywrite */
-.copywrite {
-    background-color: rgba(142, 203, 227, 0.741);
+
+.copywrite p{
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: lighter;
+}
+.follow{
+    text-align: justify;
 }
 
-.copywrite p a {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    color: black;
-}
 
 .copywrite h6 {
     color: #dc3545;
     font-weight: 500;
     font-size: 0.9rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
 }
+.links h6{
+    font-weight: lighter;
+    color: #f7f0f0cb;
+    font-size: 0.9em;
+   
+}
+.help h5{
+    font-size: 2.2vh;
 
-.imgf {
-    background-image: url("https://www.georgetown.edu/wp-content/uploads/2022/05/20190518_Commencement_College-0325-1-2000x1125.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 /* footer end */
 /* some css */
 .flipimg:hover {
-
     transform: rotateX(180deg);
-
 }
 
 @media(max-width:1200px) {
@@ -353,9 +455,9 @@ p {
     }
 
     .h22 {
-        font-size: 5vw;
+        font-size: 7vw;
     }
-
+/* 
     .h22::before {
         content: "Explore our courses";
         position: absolute;
@@ -363,7 +465,7 @@ p {
         color: #d9cca0b9;
         -webkit-text-stroke: #0000006f 1px;
         z-index: -1;
-    }
+    } */
 
     .webimg {
         display: none;
@@ -394,5 +496,71 @@ p {
 
         font-size: 0.8rem;
 
+    }
+    .links h6{
+        
+        display: inline;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .help{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .copywrite{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .copywrite p{
+        font-size: 0.5rem;
+    }
+    
+    .enquiry{
+        margin-left: 68%;
+        font-size: 0.8rem;
+    }
+    .whyitm h6{
+        font-size: 0.9rem;
+    }
+    
+
+}
+@media (max-width:450px){
+    .whyitm h6{
+        font-size: 0.6rem;
+    }
+    
+    .whyitm p{
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+    .card-body table tr td{
+        font-size: 0.7rem;
+    }
+    .card-body h5 {
+        font-size: 1rem;
+    }
+    .c{
+        margin-top: 10%;
+    }
+}
+@media (max-width:370px){
+    .c{
+        margin-top: 20%;
+    }
+    .card-body table tr td{
+        font-size: 0.5rem;
+    }
+    .card-body h5 {
+        font-size: 0.8rem;
     }
 }
